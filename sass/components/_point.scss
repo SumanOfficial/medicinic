@@ -1,0 +1,29 @@
+// # Reusable Point Component
+
+// #Import variables
+@import "../helpers/variables";
+
+// #Import mixins
+@import "../helpers/mixins";
+
+// #Import Helpers
+@import "../helpers/helpers";
+
+// ---------------------------------
+// Point Border
+// ---------------------------------
+@mixin point-outline($width, $height, $color) {
+  @extend %center;
+  @include size($width, $height);
+  @extend %round;
+  border: solid 2px $color;
+}
+
+// ---------------------------------
+// Point
+// ---------------------------------
+@mixin point($width, $height, $color) {
+  @include size($width, $height);
+  background-color: $color;
+  @extend %round;
+}

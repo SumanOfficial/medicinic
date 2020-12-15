@@ -1,1 +1,66 @@
 // # Mixins
+
+// text color mixin
+@mixin text-color($color) {
+  color: $color;
+}
+
+// dots color mixin
+@mixin dot-color($color) {
+  color: $color;
+}
+
+// extra margin for an element
+@mixin extra-margin($margin) {
+  margin: $margin;
+}
+
+// for padding
+@mixin padding($padding) {
+  padding: $padding;
+}
+
+// Shadow
+@mixin shadow($x, $y, $b, $color) {
+  box-shadow: $x $y $b $color;
+}
+
+// Element width height
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+// Media queries
+@mixin respond($breakpoint) {
+  @if ($breakpoint == lap) {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+  @if ($breakpoint == tabL) {
+    @media (max-width: 992px) {
+      @content;
+    }
+  }
+  @if ($breakpoint == tab) {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+  @if ($breakpoint == mobL) {
+    @media (max-width: 425px) {
+      @content;
+    }
+  }
+  @if ($breakpoint == mobM) {
+    @media (max-width: 375px) {
+      @content;
+    }
+  }
+  @if ($breakpoint == mobS) {
+    @media (max-width: 320px) {
+      @content;
+    }
+  }
+}

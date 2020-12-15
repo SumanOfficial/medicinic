@@ -1,1 +1,17 @@
 //  # Header
+
+// ---------------------------------
+// Header Navigation
+// ---------------------------------
+
+nav {
+  @include default-nav;
+  .navbar-brand {
+    @extend %logo;
+  }
+  .btn-outline-yellow {
+    @include size(100%, 50px);
+    @extend %m50-l;
+    @include btn-outline-yellow;
+  }
+}

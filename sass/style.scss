@@ -1,6 +1,5 @@
 /*!
 Theme Name: medicinic
-Theme URI: http://underscores.me/
 Author: Suman Biswas
 Author URI: https://github.com/SumanOfficial
 Description: A Medical Clinic Website
@@ -20,83 +19,43 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+
+Medical vector created by redgreystock - 'https://www.freepik.com/vectors/medical'</a>
 */
 
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Generic
+# Base
 	- Normalize
-	- Box sizing
-# Base
 	- Typography
-	- Elements
-	- Links
-	- Forms
-## Layouts
 # Components
+	- Button
+	- Carousel
 	- Navigation
-	- Posts and pages
-	- Comments
-	- Widgets
-	- Media
-	- Captions
-	- Galleries
-# plugins
-	- Jetpack infinite scroll
-# Utilities
-	- Accessibility
-	- Alignments
+# Helpers
+	- Helpers
+	- Mixins
+	- Varibles
+# Layouts
+	- Footer
+	- Header
+# Pages
+	- Home
+# Vendors
+	- Bootstrap
+	- Fonts
 
 --------------------------------------------------------------*/
-
-// Import variables and mixins.
-@import "abstracts/abstracts";
 
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
 
-/* Normalize
+/* Import bootstrap
 --------------------------------------------- */
-@import "generic/normalize";
+@import "./vendors/bootstrap";
 
-/* Box sizing
+/* Home Page
 --------------------------------------------- */
-@import "generic/box-sizing";
-
-/*--------------------------------------------------------------
-# Base
---------------------------------------------------------------*/
-@import "base/base";
-
-/*--------------------------------------------------------------
-# Layouts
---------------------------------------------------------------*/
-// @import "layouts/content-sidebar"; // Uncomment this line for a sidebar on right side of your content.
-// @import "layouts/sidebar-content"; // Uncomment this line for a sidebar on left side of your content.
-
-/*--------------------------------------------------------------
-# Components
---------------------------------------------------------------*/
-@import "components/components";
-
-/*--------------------------------------------------------------
-# Plugins
---------------------------------------------------------------*/
-
-/* Jetpack infinite scroll
---------------------------------------------- */
-@import "plugins/jetpack/infinite-scroll";
-
-/*--------------------------------------------------------------
-# Utilities
---------------------------------------------------------------*/
-
-/* Accessibility
---------------------------------------------- */
-@import "utilities/accessibility";
-
-/* Alignments
---------------------------------------------- */
-@import "utilities/alignments";
+@import "./pages/home";

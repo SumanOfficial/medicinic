@@ -1,0 +1,92 @@
+// #Typography
+
+// #Import fonts & colors
+@import "../../helpers/variables";
+@import "../../helpers/_mixins.scss";
+//  #Body font
+body {
+  font-family: $roboto;
+}
+
+// #h1 font
+h1 {
+  font-size: 48px;
+  color: $dark;
+  font-family: $oswald;
+
+  // tablates
+  @include respond(tab) {
+    font-size: 40px;
+  }
+  // Small Mobile
+  @include respond(mobS) {
+    font-size: 40px;
+  }
+}
+
+//  #h3 font
+h3 {
+  font-size: 30px;
+  font-family: $oswald;
+
+  // Tablates
+  @include respond(tab) {
+    font-size: 24px;
+  }
+  // Small Mobile
+  @include respond(mobS) {
+    font-size: 20px;
+  }
+}
+
+// #h5 font
+h5 {
+  font-size: 22px;
+  font-family: $oswald;
+
+  // Tablates
+  @include respond(tab) {
+    font-size: 20px;
+  }
+  // Small Mobile
+  @include respond(mobS) {
+    font-size: 18px;
+  }
+}
+
+// #h6 font
+h6 {
+  font-size: 18px;
+  color: $black;
+
+  // Tablates
+  @include respond(tab) {
+    font-size: 16px;
+  }
+  // Small Mobile
+  @include respond(mobS) {
+    font-size: 16px;
+  }
+}
+
+// #p font
+p {
+  font-size: 16px;
+  color: $black;
+}
+
+// #small font
+small {
+  font-size: 14px;
+  color: $black;
+}
+
+// #a Font
+
+a {
+  color: $black;
+  &:hover {
+    color: $black;
+    text-decoration: none;
+  }
+}

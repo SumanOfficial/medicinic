@@ -1,1 +1,502 @@
 // # Home Page Style
+
+// # Import base file
+@import "../base/base";
+
+// Import Button Component
+@import "../components/button";
+
+// Import navigation Component
+@import "../components/navigation";
+
+// Import Logo Component
+@import "../components/logo";
+
+// Import point Component
+@import "../components/point";
+
+// Import carousel Component
+@import "../components/carousel";
+
+// ---------------------------------
+// Header Navigation
+// ---------------------------------
+
+@import "../layouts/header";
+
+// ---------------------------------
+// Main Hero Area
+// ---------------------------------
+#hero-area {
+  .hero-text-area {
+    @include extra-margin(150px 0 0 0);
+
+    // large mobile
+    @include respond(mobL) {
+      margin-top: 30px;
+    }
+    // Medium mobile
+    @include respond(mobM) {
+      margin-top: 50px;
+    }
+    // Small Mobile
+    @include respond(mobS) {
+      @include extra-margin(30px 0 0 0);
+    }
+
+    h6 {
+      @include text-color(#07689f);
+    }
+    h1 {
+      @extend %m10-t;
+    }
+    p {
+      @include extra-margin(20px 0 50px 0);
+    }
+    .btn-yellow {
+      @include btn-yellow;
+    }
+  }
+
+  .hero-img-area {
+    @include size(100%, 565px);
+
+    // Mobile Medium
+    @include respond(mobM) {
+      @include size(100%, 350px);
+    }
+    // Mobile Small
+    @include respond(mobS) {
+      @include size(100%, 350px);
+    }
+
+    .hero-parttern {
+      @extend %absolute;
+      top: 5%;
+      right: 0;
+
+      // Mobile medium
+      @include respond(mobM) {
+        top: 10%;
+        left: 0;
+        @include size(100%, 350px);
+      }
+
+      // Mobile Small
+      @include respond(mobS) {
+        top: 10%;
+        left: 0;
+        @include size(100%, 350px);
+      }
+    }
+  }
+}
+
+// ---------------------------------
+// Service Area
+// ---------------------------------
+#services {
+  @extend %section-margin;
+  background-color: $yellow-super-light;
+  @include padding(80px 0);
+  // Mobile Medium
+  @include respond(mobM) {
+    @include extra-margin(80px 0 0 0);
+  }
+  // Mobile Small
+  @include respond(mobS) {
+    @include extra-margin(100px 0 0 0);
+  }
+
+  .service {
+    @extend %center-row;
+    border-right: 2px solid #b9b9b9;
+    &:last-of-type {
+      border: none;
+    }
+    .icon {
+      @extend %icon-size;
+    }
+  }
+}
+
+// ---------------------------------
+// About Area
+// ---------------------------------
+#about {
+  @extend %section-margin;
+
+  // Tablates
+  @include respond(tab) {
+    margin-top: 50px;
+  }
+  @include respond(mobS) {
+    margin-top: 20px;
+  }
+
+  .img-border {
+    @extend %section-margin;
+    @include size(440px, 440px);
+    border: 2px solid $yellow;
+    @extend %round;
+
+    // Tablates
+    @include respond(tab) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include size(300px, 300px);
+    }
+    // Small Mobile
+    @include respond(mobS) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include size(300px, 300px);
+    }
+
+    // Medium Mobile
+    @include respond(mobM) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include size(340px, 340px);
+    }
+    .img-container {
+      @extend %center;
+      @include size(440px, 440px);
+      @extend %round;
+
+      // Tabs
+      @include respond(tab) {
+        @include size(280px, 280px);
+      }
+      // Small Mobile
+      @include respond(mobS) {
+        @include size(280px, 280px);
+      }
+      // Medium Mobile
+      @include respond(mobM) {
+        @include size(300px, 300px);
+      }
+      img {
+        @include size(400px, 400px);
+        @extend %round;
+
+        // Tabs
+        @include respond(tab) {
+          @include size(280px, 280px);
+        }
+        // Small Mobile
+        @include respond(mobS) {
+          @include size(280px, 280px);
+        }
+
+        // Medium Mobile
+        @include respond(mobM) {
+          @include size(300px, 300px);
+        }
+      }
+    }
+  }
+  .about-text {
+    @extend %m80-t;
+  }
+  .about-text-head {
+    @include text-color(#07689f);
+  }
+  .about-text-heading {
+    @include extra-margin(10px 0 20px 0);
+  }
+
+  .pattrn {
+    position: relative;
+    .about-pattrn {
+      @extend %absolute;
+      top: 0%;
+      left: 28%;
+    }
+  }
+
+  .about-review {
+    @extend %m50-t;
+    .about-review-doctor {
+      @extend %center;
+      .point-outline {
+        margin-top: 15px;
+        @include point-outline(30px, 30px, $yellow);
+        .point {
+          @include point(20px, 20px, $yellow);
+        }
+      }
+      h3 {
+        font-size: 20px;
+      }
+      h6 {
+        font-size: 16px;
+        @include respond(mobS) {
+          font-size: 14px;
+        }
+      }
+    }
+    .about-review-hospital {
+      @extend %center;
+      .point-outline {
+        margin-top: 15px;
+        @include point-outline(30px, 30px, $yellow-light);
+        .point {
+          @include point(20px, 20px, $yellow-light);
+        }
+      }
+      h3 {
+        font-size: 20px;
+      }
+      h6 {
+        font-size: 16px;
+      }
+    }
+    .about-review-patients {
+      @extend %center;
+      .point-outline {
+        margin-top: 15px;
+        @include point-outline(30px, 30px, $blue);
+        .point {
+          @include point(20px, 20px, $blue);
+        }
+      }
+      h3 {
+        font-size: 20px;
+      }
+      h6 {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+// ---------------------------------
+// Contact Area
+// ---------------------------------
+#contact {
+  position: relative;
+  @extend %section-margin;
+  @include size(100%, 465px);
+  background-color: $blue;
+  // Tablates
+  @include respond(tab) {
+    margin-top: 50px;
+  }
+  // Large Mobile
+  @include respond(mobL) {
+    @include size(100%, auto);
+  }
+  // Medium mobile
+  @include respond(mobM) {
+    @include size(100%, auto);
+  }
+  // Small Mobile
+  @include respond(mobS) {
+    @include size(100%, auto);
+  }
+  .contact-pattern {
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    @include respond(tab) {
+      opacity: 0.2;
+    }
+    @include respond(mobS) {
+      opacity: 0.2;
+    }
+  }
+  .contact-text {
+    @include padding(80px 0);
+    @include respond(mobL) {
+      @include padding(50px 0);
+    }
+    @include respond(mobM) {
+      @include padding(50px 0);
+    }
+    @include respond(mobS) {
+      @include padding(50px 0);
+    }
+    h6 {
+      color: $yellow;
+    }
+    h1,
+    h3 {
+      color: $white;
+      @include extra-margin(10px 0);
+    }
+    p {
+      color: $white;
+      @extend %m50-b;
+    }
+  }
+  .btn-yellow {
+    @include btn-yellow;
+    box-shadow: none;
+  }
+
+  .contact-icon {
+    @include padding(120px 100px);
+    // Tablates
+    @include respond(tab) {
+      @include padding(150px 0);
+    }
+    @include respond(mobL) {
+      @include padding(20px);
+    }
+    @include respond(mobM) {
+      @include padding(20px);
+    }
+    @include respond(mobS) {
+      @include padding(20px);
+    }
+    .contact-phone {
+      @include padding(20px 0);
+      // Tablates
+      @include respond(tab) {
+        @include padding(10px 0);
+      }
+      @include respond(mobS) {
+        margin-top: 0px;
+      }
+      img {
+        @extend %icon-size;
+        @extend %m10-t;
+      }
+      h6,
+      h3 {
+        padding-left: 30px;
+        color: $white;
+      }
+    }
+    .contact-mail {
+      @include padding(20px 0);
+      // Tablates
+      @include respond(tab) {
+        @include padding(10px 0);
+      }
+      @include respond(mobS) {
+        margin-top: 0;
+      }
+      img {
+        @extend %icon-size;
+        @extend %m10-t;
+      }
+      h6,
+      h3 {
+        padding-left: 30px;
+        color: $white;
+      }
+    }
+  }
+}
+
+// ---------------------------------
+// Doctor Area
+// ---------------------------------
+#doctors {
+  @extend %section-margin;
+  .doctor-head {
+    color: $blue;
+  }
+  .slider {
+    @extend %m20-l;
+    .card {
+      @include slider-card($light-grey, $blue);
+    }
+    .slick-dots li.slick-active button:before,
+    .slick-dots li button:before {
+      @extend %m20-t;
+      @include slider-dots($grey);
+    }
+
+    .slick-dots li.slick-active button:before {
+      color: $yellow;
+    }
+  }
+  .slider-arrows {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    .slick-arrow {
+      @include extra-margin(0 0 0 100px);
+      @include size(50px, 50px);
+      cursor: pointer;
+    }
+    .pa.slick-arrow {
+      @include respond(mobS) {
+        @include extra-margin(0 0 0 80px);
+      }
+    }
+  }
+}
+
+// ---------------------------------
+// Testimonials Area
+// ---------------------------------
+#testimonials {
+  background-color: $yellow-super-light;
+  @extend %section-margin;
+  @include size(100%, auto);
+  @include padding(80px);
+
+  @include respond(mobL) {
+    @include padding(50px 20px);
+  }
+  @include respond(mobM) {
+    @include padding(50px 20px);
+  }
+  @include respond(mobS) {
+    @include padding(50px 20px);
+  }
+  .testimonial-heading {
+    // @include padding(50px 0 0 0);
+    h6 {
+      color: $blue;
+    }
+  }
+  .testimonial-slide-arrows {
+    @extend %m20-t;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    .slick-arrow {
+      @extend %m80-l;
+      @extend %m20-b;
+      @include size(50px, 50px);
+      cursor: pointer;
+    }
+  }
+  .Testimonial {
+    @extend %m20-l;
+    @include size(100%, auto);
+    @include padding(25px);
+    background-color: $white;
+    .star {
+      float: right;
+      color: $yellow;
+    }
+    h5 {
+      color: $blue;
+    }
+  }
+  .slick-dots li.slick-active button:before,
+  .slick-dots li button:before {
+    @extend %m20-t;
+    @include slider-dots($grey);
+  }
+
+  .slick-dots li.slick-active button:before {
+    color: $yellow;
+  }
+}
+
+// ---------------------------------
+// Footer Area
+// ---------------------------------
+
+@import "../layouts/footer";

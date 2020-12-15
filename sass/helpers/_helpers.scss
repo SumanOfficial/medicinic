@@ -1,1 +1,114 @@
 // # Helpers
+
+// For positioning absolute element
+%absolute {
+  position: absolute;
+  z-index: -1;
+}
+// Content Center row
+%center-row {
+  display: flex;
+  justify-content: center;
+}
+// Content center
+%center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+// Full Round Corners
+%round {
+  border-radius: 50%;
+}
+// For Rounded Corners
+%rounded-corners {
+  border-radius: 25px;
+}
+
+// For section margin
+%section-margin {
+  margin-top: 100px;
+}
+
+// icon size
+%icon-size {
+  width: 50px;
+  height: 50px;
+}
+
+// transition element
+%transition-effect {
+  transition: 0.3s all;
+}
+
+// ---------------------------------
+// Some Margins
+// ---------------------------------
+
+// #for 10px margin use margin-i
+%m10 {
+  margin: 10px;
+}
+%m10-t {
+  margin-top: 10px;
+}
+%m10-r {
+  margin-right: 10px;
+}
+%m10-b {
+  margin-bottom: 10px;
+}
+%m10-l {
+  margin-left: 10px;
+}
+
+// #for 20px margin use margin-ii
+%m20 {
+  margin: 20px;
+}
+%m20-t {
+  margin-top: 20px;
+}
+%m20-r {
+  margin-right: 20px;
+}
+%m20-b {
+  margin-bottom: 20px;
+}
+%m20-l {
+  margin-left: 20px;
+}
+
+// #for 50px margin use margin-v
+%m50 {
+  margin: 50px;
+}
+%m50-t {
+  margin-top: 50px;
+}
+%m50-r {
+  margin-right: 50px;
+}
+%m50-b {
+  margin-bottom: 50px;
+}
+%m50-l {
+  margin-left: 50px;
+}
+
+// #for 80px margin use margin-viii
+%m80 {
+  margin: 80px;
+}
+%m80-t {
+  margin-top: 80px;
+}
+%m80-r {
+  margin-right: 80px;
+}
+%m80-b {
+  margin-bottom: 80px;
+}
+%m80-l {
+  margin-left: 80px;
+}

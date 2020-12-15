@@ -1,1 +1,29 @@
-// # Variables
+//  =============================
+//  #Variables
+//  =============================
+
+// --------------------------------------
+// #color
+// --------------------------------------
+$dark: #373f41;
+$black: #292929;
+
+$white: #fff;
+$grey: #b9b9b9;
+$light-grey: #f1f1f1;
+
+$yellow: #ffc93c;
+$yellow-light: #ffdc82;
+$yellow-super-light: #fffbf1;
+
+$blue: #07689f;
+
+// --------------------------------------
+// #Fonts
+// --------------------------------------
+
+// #Import Fonts vendor
+@import "../vendors/fonts";
+
+$roboto: "Roboto", sans-serif;
+$oswald: "Oswald", sans-serif;

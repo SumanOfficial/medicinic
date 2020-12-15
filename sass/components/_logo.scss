@@ -1,0 +1,11 @@
+// #Logo
+
+// #Import variables
+@import "../helpers/variables";
+
+%logo {
+  font-family: $oswald;
+  letter-spacing: 6px;
+  font-weight: bold;
+  font-size: 30px;
+}

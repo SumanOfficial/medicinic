@@ -1,1 +1,36 @@
 // # Carousel
+
+// Import Variables
+@import "../helpers/variables";
+
+// Import mixins
+@import "../helpers/mixins";
+
+// Import helpers
+@import "../helpers/helpers";
+
+// ---------------------------------
+// Slider element
+// ---------------------------------
+
+@mixin slider-card($bgc, $title-color) {
+  cursor: pointer;
+  margin-left: 10px;
+  background-color: $bgc;
+  border: none;
+  // card image
+  .card-img {
+    @include padding(20px);
+    img {
+      @include size(100%, auto);
+    }
+  }
+  .card-title {
+    color: $title-color;
+  }
+}
+@mixin slider-dots($color) {
+  color: $color;
+  opacity: 1;
+  font-size: 12px;
+}
