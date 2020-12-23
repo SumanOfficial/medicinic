@@ -25,12 +25,31 @@
 @import "../layouts/header";
 
 // ---------------------------------
+// BODY
+// ---------------------------------
+
+// body {
+//   background-image: url(../../img/background.svg);
+//   background-repeat: no-repeat;
+//   background-position: center top;
+// }
+
+// ---------------------------------
 // Main Hero Area
 // ---------------------------------
 #hero-area {
+  .hero-back {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    opacity: 0.7;
+  }
   .hero-text-area {
-    @include extra-margin(150px 0 0 0);
+    @include extra-margin(100px 0 0 0);
 
+    .heart-rate {
+      margin-bottom: 20px;
+    }
     // large mobile
     @include respond(mobL) {
       margin-top: 30px;
@@ -60,7 +79,7 @@
 
   .hero-img-area {
     @include size(100%, 565px);
-
+    position: relative;
     // Mobile Medium
     @include respond(mobM) {
       @include size(100%, 350px);
@@ -70,11 +89,28 @@
       @include size(100%, 350px);
     }
 
+    .hero-man {
+      position: absolute;
+      bottom: 0%;
+      right: 15%;
+      // Mobile medium
+      @include respond(mobM) {
+        top: 10%;
+        left: 0;
+        @include size(100%, 250px);
+      }
+
+      // Mobile Small
+      @include respond(mobS) {
+        top: 10%;
+        left: 0;
+        @include size(100%, 250px);
+      }
+    }
     .hero-parttern {
       @extend %absolute;
-      top: 5%;
+      bottom: 10%;
       right: 0;
-
       // Mobile medium
       @include respond(mobM) {
         top: 10%;
@@ -124,8 +160,16 @@
 // About Area
 // ---------------------------------
 #about {
+  position: relative;
   @extend %section-margin;
-
+  .about-back {
+    // margin-top: -150px;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    z-index: -2;
+    opacity: 0.6;
+  }
   // Tablates
   @include respond(tab) {
     margin-top: 50px;
@@ -400,6 +444,14 @@
 // ---------------------------------
 #doctors {
   @extend %section-margin;
+  position: relative;
+  .doctor-back {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    opacity: 0.7;
+    z-index: -2;
+  }
   .doctor-head {
     color: $blue;
   }
