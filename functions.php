@@ -49,11 +49,6 @@ add_action('after_setup_theme', 'register_navwalker');
 require get_template_directory() . './inc/custom-nav-menu.php';
 
 /**
- * Register widget area.
- */
-require get_template_directory() . './inc/custom-widget.php';
-
-/**
  * Enqueue scripts and styles.
  */
 require get_template_directory() . './inc/enqueue_scripts_style.php';
@@ -77,6 +72,16 @@ require get_template_directory() . '/inc/template-functions.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
+
+/**
+ * Custom Sidebars
+ */
+require get_template_directory() . '/inc/custom-sidebar.php';
+
+/**
+ * Custom Text Widget
+ */
+require get_template_directory() . './inc/custom-heading-widget.php';
 
 /**
  * Load Jetpack compatibility file.

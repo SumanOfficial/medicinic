@@ -78,52 +78,37 @@
   }
 
   .hero-img-area {
-    @include size(100%, 565px);
-    position: relative;
+    // @include size(400px, 565px);
+    // position: relative;
     // Mobile Medium
-    @include respond(mobM) {
-      @include size(100%, 350px);
-    }
+    // @include respond(mobM) {
+    //   @include size(100%, 350px);
+    // }
     // Mobile Small
-    @include respond(mobS) {
-      @include size(100%, 350px);
-    }
+    // @include respond(mobS) {
+    //   @include size(100%, 350px);
+    // }
 
     .hero-man {
-      position: absolute;
-      bottom: 0%;
-      right: 15%;
+      float: right;
+      // @include size(100%, 560px);
+      max-width: 100%;
+      max-height: auto;
+      // position: absolute;
+      // bottom: 0%;
+      // right: 0%;
       // Mobile medium
-      @include respond(mobM) {
-        top: 10%;
-        left: 0;
-        @include size(100%, 250px);
-      }
-
+      // @include respond(mobM) {
+      //   top: 10%;
+      //   left: 0;
+      //   @include size(100%, 250px);
+      // }
       // Mobile Small
-      @include respond(mobS) {
-        top: 10%;
-        left: 0;
-        @include size(100%, 250px);
-      }
-    }
-    .hero-parttern {
-      @extend %absolute;
-      bottom: 10%;
-      right: 0;
-      // Mobile medium
-      @include respond(mobM) {
-        top: 10%;
-        left: 0;
-        @include size(100%, 350px);
-      }
-
-      // Mobile Small
-      @include respond(mobS) {
-        top: 10%;
-        left: 0;
-        @include size(100%, 350px);
-      }
+      // @include respond(mobS) {
+      //   top: 10%;
+      //   left: 0;
+      //   @include size(100%, 250px);
+      // }
     }
   }
 }
