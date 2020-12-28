@@ -249,41 +249,7 @@
 
   .about-review {
     @extend %m50-t;
-    .about-review-doctor {
-      @extend %center;
-      .point-outline {
-        margin-top: 15px;
-        @include point-outline(30px, 30px, $yellow);
-        .point {
-          @include point(20px, 20px, $yellow);
-        }
-      }
-      h3 {
-        font-size: 20px;
-      }
-      h6 {
-        font-size: 16px;
-        @include respond(mobS) {
-          font-size: 14px;
-        }
-      }
-    }
-    .about-review-hospital {
-      @extend %center;
-      .point-outline {
-        margin-top: 15px;
-        @include point-outline(30px, 30px, $yellow-light);
-        .point {
-          @include point(20px, 20px, $yellow-light);
-        }
-      }
-      h3 {
-        font-size: 20px;
-      }
-      h6 {
-        font-size: 16px;
-      }
-    }
+
     .about-review-patients {
       @extend %center;
       .point-outline {
@@ -294,7 +260,7 @@
         }
       }
       h3 {
-        font-size: 20px;
+        font-size: 24px;
       }
       h6 {
         font-size: 16px;

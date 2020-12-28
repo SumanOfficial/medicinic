@@ -12,77 +12,41 @@
 
 // query for the about page
 $about_query = new WP_Query('pagename=about');
-// "loop" through query (even though it's just one page) 
-while ($about_query->have_posts()) : $about_query->the_post();
+if ($about_query->have_posts()) :
+    // "loop" through query (even though it's just one page) 
+    while ($about_query->have_posts()) : $about_query->the_post();
 
 ?>
 
-    <!-- #TODO add the about back img -->
-    <img src="img/about-back.svg" alt="" class="about-back rellax" data-rellax-speed="1" />
-    <div class="pattrn">
-        <!-- #TODO add the about back img -->
-        <img src="img/about-pattrn.svg" alt="" class="about-pattrn" />
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="img-border">
-                    <div class="img-container">
-                        <?php medicinic_post_thumbnail(); ?>
+        <img src="<?php echo get_template_directory_uri() . '/assets/about-back.svg'; ?>" alt="" class="about-back rellax" data-rellax-speed="1" />
+        <div class="pattrn">
+            <img src="<?php echo get_template_directory_uri() . '/assets/about-pattrn.svg'; ?>" alt="" class="about-pattrn" />
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="img-border">
+                        <div class="img-container">
+                            <?php medicinic_post_thumbnail(); ?>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6 about-text">
-                <?php the_title('<h6 class="about-text-head">', '</h6>'); ?>
-                <?php the_content(); ?>
-                <!-- #TODO this should be a widget  -->
-                <div class="about-review row">
-                    <div class="about-review-doctor col-4">
-                        <div class="row">
-                            <div class="col-3">
-                                <div class="point-outline">
-                                    <div class="point"></div>
-                                </div>
-                            </div>
-                            <div class="col-9">
-                                <h3>251 +</h3>
-                                <h6>Expart Doctors</h6>
-                            </div>
+                <div class="col-md-6 about-text">
+                    <?php the_title('<h6 class="about-text-head">', '</h6>'); ?>
+                    <?php the_content(); ?>
+
+                    <?php if (is_active_sidebar('about-review-sidebar')) : ?>
+                        <div class="about-review row">
+                            <?php get_sidebar('about-review'); ?>
                         </div>
-                    </div>
-                    <div class="about-review-hospital col-4">
-                        <div class="row">
-                            <div class="col-3">
-                                <div class="point-outline">
-                                    <div class="point"></div>
-                                </div>
-                            </div>
-                            <div class="col-9">
-                                <h3>3556 +</h3>
-                                <h6>Happy patients</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-review-patients col-4">
-                        <div class="row">
-                            <div class="col-3">
-                                <div class="point-outline">
-                                    <div class="point"></div>
-                                </div>
-                            </div>
-                            <div class="col-9">
-                                <h3>350 +</h3>
-                                <h6>Hospital Room</h6>
-                            </div>
-                        </div>
-                    </div>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
-    </div>
 
 <?php
-endwhile;
+    endwhile;
+endif;
 // reset post data (important!)
 wp_reset_postdata();
 

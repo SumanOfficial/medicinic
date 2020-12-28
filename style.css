@@ -516,7 +516,7 @@ a:hover {
           justify-content: center;
 }
 
-#about .img-border .img-container, #about .about-review .about-review-doctor, #about .about-review .about-review-doctor .point-outline, #about .about-review .about-review-hospital, #about .about-review .about-review-hospital .point-outline, #about .about-review .about-review-patients, #about .about-review .about-review-patients .point-outline {
+#about .img-border .img-container, #about .about-review .about-review-patients, #about .about-review .about-review-patients .point-outline {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -528,7 +528,7 @@ a:hover {
           align-items: center;
 }
 
-#about .img-border, #about .img-border .img-container, #about .img-border .img-container img, #about .about-review .about-review-doctor .point-outline, #about .about-review .about-review-doctor .point-outline .point, #about .about-review .about-review-hospital .point-outline, #about .about-review .about-review-hospital .point-outline .point, #about .about-review .about-review-patients .point-outline, #about .about-review .about-review-patients .point-outline .point {
+#about .img-border, #about .img-border .img-container, #about .img-border .img-container img, #about .about-review .about-review-patients .point-outline, #about .about-review .about-review-patients .point-outline .point {
   border-radius: 50%;
 }
 
@@ -609,7 +609,7 @@ nav .navbar-brand, footer .footer-logo {
           justify-content: center;
 }
 
-#about .img-border .img-container, #about .about-review .about-review-doctor, #about .about-review .about-review-doctor .point-outline, #about .about-review .about-review-hospital, #about .about-review .about-review-hospital .point-outline, #about .about-review .about-review-patients, #about .about-review .about-review-patients .point-outline {
+#about .img-border .img-container, #about .about-review .about-review-patients, #about .about-review .about-review-patients .point-outline {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -621,7 +621,7 @@ nav .navbar-brand, footer .footer-logo {
           align-items: center;
 }
 
-#about .img-border, #about .img-border .img-container, #about .img-border .img-container img, #about .about-review .about-review-doctor .point-outline, #about .about-review .about-review-doctor .point-outline .point, #about .about-review .about-review-hospital .point-outline, #about .about-review .about-review-hospital .point-outline .point, #about .about-review .about-review-patients .point-outline, #about .about-review .about-review-patients .point-outline .point {
+#about .img-border, #about .img-border .img-container, #about .img-border .img-container img, #about .about-review .about-review-patients .point-outline, #about .about-review .about-review-patients .point-outline .point {
   border-radius: 50%;
 }
 
@@ -695,7 +695,7 @@ nav .btn-outline-yellow {
           justify-content: center;
 }
 
-#about .img-border .img-container, #about .about-review .about-review-doctor, #about .about-review .about-review-doctor .point-outline, #about .about-review .about-review-hospital, #about .about-review .about-review-hospital .point-outline, #about .about-review .about-review-patients, #about .about-review .about-review-patients .point-outline {
+#about .img-border .img-container, #about .about-review .about-review-patients, #about .about-review .about-review-patients .point-outline {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -707,7 +707,7 @@ nav .btn-outline-yellow {
           align-items: center;
 }
 
-#about .img-border, #about .img-border .img-container, #about .img-border .img-container img, #about .about-review .about-review-doctor .point-outline, #about .about-review .about-review-doctor .point-outline .point, #about .about-review .about-review-hospital .point-outline, #about .about-review .about-review-hospital .point-outline .point, #about .about-review .about-review-patients .point-outline, #about .about-review .about-review-patients .point-outline .point {
+#about .img-border, #about .img-border .img-container, #about .img-border .img-container img, #about .about-review .about-review-patients .point-outline, #about .about-review .about-review-patients .point-outline .point {
   border-radius: 50%;
 }
 
@@ -1081,54 +1081,6 @@ nav .btn-outline-yellow:hover {
   left: 28%;
 }
 
-#about .about-review .about-review-doctor .point-outline {
-  margin-top: 15px;
-  width: 30px;
-  height: 30px;
-  border: solid 2px #ffc93c;
-}
-
-#about .about-review .about-review-doctor .point-outline .point {
-  width: 20px;
-  height: 20px;
-  background-color: #ffc93c;
-}
-
-#about .about-review .about-review-doctor h3 {
-  font-size: 20px;
-}
-
-#about .about-review .about-review-doctor h6 {
-  font-size: 16px;
-}
-
-@media (max-width: 320px) {
-  #about .about-review .about-review-doctor h6 {
-    font-size: 14px;
-  }
-}
-
-#about .about-review .about-review-hospital .point-outline {
-  margin-top: 15px;
-  width: 30px;
-  height: 30px;
-  border: solid 2px #ffdc82;
-}
-
-#about .about-review .about-review-hospital .point-outline .point {
-  width: 20px;
-  height: 20px;
-  background-color: #ffdc82;
-}
-
-#about .about-review .about-review-hospital h3 {
-  font-size: 20px;
-}
-
-#about .about-review .about-review-hospital h6 {
-  font-size: 16px;
-}
-
 #about .about-review .about-review-patients .point-outline {
   margin-top: 15px;
   width: 30px;
@@ -1143,7 +1095,7 @@ nav .btn-outline-yellow:hover {
 }
 
 #about .about-review .about-review-patients h3 {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 #about .about-review .about-review-patients h6 {
