@@ -363,28 +363,14 @@
         @extend %m10-t;
       }
       h6,
-      h3 {
+      h3,
+      h2,
+      h4,
+      h5,
+      p {
         padding-left: 30px;
         color: $white;
-      }
-    }
-    .contact-mail {
-      @include padding(20px 0);
-      // Tablates
-      @include respond(tab) {
-        @include padding(10px 0);
-      }
-      @include respond(mobS) {
-        margin-top: 0;
-      }
-      img {
-        @extend %icon-size;
-        @extend %m10-t;
-      }
-      h6,
-      h3 {
-        padding-left: 30px;
-        color: $white;
+        font-family: $oswald;
       }
     }
   }

@@ -18,13 +18,6 @@ $args = [
 ];
 // service query
 $sq = new WP_Query($args);
-
-/**
- * setup for the custom field Icon
- */
-// global $wp_query;
-// $postID = $wp_query->post->ID;
-
 ?>
 
 
@@ -60,7 +53,7 @@ $sq = new WP_Query($args);
                         </div>
                         <div class="col-9">
                             <h5><?php the_title(); ?></h5>
-                            <p><?php the_excerpt(); ?></p>
+                            <?php the_excerpt(); ?>
                         </div>
                     </div>
                 </div>

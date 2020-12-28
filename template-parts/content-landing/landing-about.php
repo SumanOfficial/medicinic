@@ -34,12 +34,9 @@ if ($about_query->have_posts()) :
                 <div class="col-md-6 about-text">
                     <?php the_title('<h6 class="about-text-head">', '</h6>'); ?>
                     <?php the_content(); ?>
-
-                    <?php if (is_active_sidebar('about-review-sidebar')) : ?>
-                        <div class="about-review row">
-                            <?php get_sidebar('about-review'); ?>
-                        </div>
-                    <?php endif; ?>
+                    <div class="about-review row">
+                        <?php get_sidebar('about-review'); ?>
+                    </div>
                 </div>
             </div>
         </div>

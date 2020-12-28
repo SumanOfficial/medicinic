@@ -540,7 +540,7 @@ nav .btn-outline-yellow, #hero-area .hero-text-area .btn-yellow, #contact .btn-y
   margin-top: 100px;
 }
 
-#services .service .icon, #contact .contact-icon .contact-phone img, #contact .contact-icon .contact-mail img, footer .social .icons img {
+#services .service .icon, #contact .contact-icon .contact-phone img, footer .social .icons img {
   width: 50px;
   height: 50px;
 }
@@ -550,7 +550,7 @@ nav .btn-outline-yellow, #hero-area .hero-text-area .btn-yellow, #contact .btn-y
   transition: 0.3s all;
 }
 
-#hero-area .hero-text-area h1, #contact .contact-icon .contact-phone img, #contact .contact-icon .contact-mail img {
+#hero-area .hero-text-area h1, #contact .contact-icon .contact-phone img {
   margin-top: 10px;
 }
 
@@ -633,7 +633,7 @@ nav .btn-outline-yellow, #hero-area .hero-text-area .btn-yellow, #contact .btn-y
   margin-top: 100px;
 }
 
-#services .service .icon, #contact .contact-icon .contact-phone img, #contact .contact-icon .contact-mail img, footer .social .icons img {
+#services .service .icon, #contact .contact-icon .contact-phone img, footer .social .icons img {
   width: 50px;
   height: 50px;
 }
@@ -643,7 +643,7 @@ nav .btn-outline-yellow, #hero-area .hero-text-area .btn-yellow, #contact .btn-y
   transition: 0.3s all;
 }
 
-#hero-area .hero-text-area h1, #contact .contact-icon .contact-phone img, #contact .contact-icon .contact-mail img {
+#hero-area .hero-text-area h1, #contact .contact-icon .contact-phone img {
   margin-top: 10px;
 }
 
@@ -719,7 +719,7 @@ nav .btn-outline-yellow, #hero-area .hero-text-area .btn-yellow, #contact .btn-y
   margin-top: 100px;
 }
 
-#services .service .icon, #contact .contact-icon .contact-phone img, #contact .contact-icon .contact-mail img, footer .social .icons img {
+#services .service .icon, #contact .contact-icon .contact-phone img, footer .social .icons img {
   width: 50px;
   height: 50px;
 }
@@ -729,7 +729,7 @@ nav .btn-outline-yellow, #hero-area .hero-text-area .btn-yellow, #contact .btn-y
   transition: 0.3s all;
 }
 
-#hero-area .hero-text-area h1, #contact .contact-icon .contact-phone img, #contact .contact-icon .contact-mail img {
+#hero-area .hero-text-area h1, #contact .contact-icon .contact-phone img {
   margin-top: 10px;
 }
 
@@ -1254,31 +1254,14 @@ nav .btn-outline-yellow:hover {
 }
 
 #contact .contact-icon .contact-phone h6,
-#contact .contact-icon .contact-phone h3 {
+#contact .contact-icon .contact-phone h3,
+#contact .contact-icon .contact-phone h2,
+#contact .contact-icon .contact-phone h4,
+#contact .contact-icon .contact-phone h5,
+#contact .contact-icon .contact-phone p {
   padding-left: 30px;
   color: #fff;
-}
-
-#contact .contact-icon .contact-mail {
-  padding: 20px 0;
-}
-
-@media (max-width: 768px) {
-  #contact .contact-icon .contact-mail {
-    padding: 10px 0;
-  }
-}
-
-@media (max-width: 320px) {
-  #contact .contact-icon .contact-mail {
-    margin-top: 0;
-  }
-}
-
-#contact .contact-icon .contact-mail h6,
-#contact .contact-icon .contact-mail h3 {
-  padding-left: 30px;
-  color: #fff;
+  font-family: "Oswald", sans-serif;
 }
 
 #doctors {

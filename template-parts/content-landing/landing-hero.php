@@ -17,6 +17,7 @@
                 <?php
                 get_sidebar();
                 ?>
+                <!-- #TODO make this buttn dynamic -->
                 <a href="" class="btn-yellow">Get An Appointment</a>
             </div>
         </div>
