@@ -20,25 +20,25 @@ $args = [
 $cq = new WP_Query($args);
 ?>
 
-<img src="<?php echo get_template_directory_uri() . '/assets/contact-pattern.svg'; ?>" alt="" class="contact-pattern" />
-<div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="contact-text">
-                <?php get_sidebar('contact-hero'); ?>
-                <!-- #TODO make this buttn dynamic -->
-                <a href="" class="btn-yellow">Make Appointment</a>
+<?php if ($cq->have_posts()) : ?>
+    <img src="<?php echo get_template_directory_uri() . '/assets/contact-pattern.svg'; ?>" alt="" class="contact-pattern" />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="contact-text">
+                    <?php get_sidebar('contact-hero'); ?>
+                    <!-- #TODO make this buttn dynamic -->
+                    <a href="" class="btn-yellow">Make Appointment</a>
+                </div>
             </div>
-        </div>
-        <div class="col-md-6">
-            <div class="contact-icon">
-                <?php
-                /**
-                 * displaying the custom post-type contact
-                 */
-                if ($cq->have_posts()) :
+            <div class="col-md-6">
+                <div class="contact-icon">
+                    <?php
+                    /**
+                     * displaying the custom post-type contact
+                     */
                     while ($cq->have_posts()) : $cq->the_post();
-                ?>
+                    ?>
                         <div class="contact-phone">
                             <div class="row">
                                 <?php
@@ -63,10 +63,11 @@ $cq = new WP_Query($args);
                                 </div>
                             </div>
                         </div>
-                <?php endwhile;
+                    <?php endwhile;
                     wp_reset_postdata();
-                endif; ?>
+                    ?>
+                </div>
             </div>
         </div>
     </div>
-</div>
+<?php endif;  ?>

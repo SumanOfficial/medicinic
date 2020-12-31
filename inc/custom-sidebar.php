@@ -70,6 +70,26 @@ function medicinic_sidebar()
         'after_desc'  => '</p>',
     );
     register_sidebar($hero_args);
+
+
+    /**
+     * Register contact us hero sidebar of landing page
+     * before_sub_title, after_sub_title & before desc, after_desc is created for custom heading widgte
+     */
+    $hero_args = array(
+        'name' => __('Doctor Hero Sidebar', 'medicinic'),
+        'id' => 'doctor-hero-sidebar',
+        'description' => __('This is the landing page Doctors sidebar for hero text area !', 'medicinic'),
+        'before_widget' => '<div>',
+        'after_widget' => '</div>',
+        'before_title'  => '<h6 class="doctor-head">',
+        'after_title'   => '</h6>',
+        'before_sub_title'  => '<h1 class="doctor-heading">',
+        'after_sub_title'   => '</h1>',
+        'before_desc'  => '<p>',
+        'after_desc'  => '</p>',
+    );
+    register_sidebar($hero_args);
 }
 
 // initialize widgets

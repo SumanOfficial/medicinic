@@ -20,16 +20,15 @@ $args = [
 $sq = new WP_Query($args);
 ?>
 
-
-<div class="container">
-    <div class="row">
-        <?php
-        /**
-         * looping the custom post type services
-         */
-        if ($sq->have_posts()) :
+<?php if ($sq->have_posts()) : ?>
+    <div class="container">
+        <div class="row">
+            <?php
+            /**
+             * looping the custom post type services
+             */
             while ($sq->have_posts()) : $sq->the_post();
-        ?>
+            ?>
                 <div class="col-md-4 service">
                     <div class="row">
                         <div class="col-3">
@@ -57,7 +56,7 @@ $sq = new WP_Query($args);
                         </div>
                     </div>
                 </div>
-        <?php
+            <?php
                 /**
                  * end if condition
                  * end while loop
@@ -65,7 +64,8 @@ $sq = new WP_Query($args);
             endwhile;
             // reset post data
             wp_reset_postdata();
-        endif;
-        ?>
+
+            ?>
+        </div>
     </div>
-</div>
+<?php endif; ?>
