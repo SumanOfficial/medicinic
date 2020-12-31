@@ -27,7 +27,7 @@ $cq = new WP_Query($args);
             <div class="col-md-6">
                 <div class="contact-text">
                     <?php get_sidebar('contact-hero'); ?>
-                    <!-- #TODO make this buttn dynamic -->
+                    <!-- #TODO make this button dynamic -->
                     <a href="" class="btn-yellow">Make Appointment</a>
                 </div>
             </div>
