@@ -24,34 +24,6 @@ footer {
   .footer-logo {
     @extend %logo;
   }
-  .footer-pattern {
-    // @extend %absolute;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    img {
-      @include size(100%, auto);
-    }
-
-    // Tablate
-    @include respond(tab) {
-      display: none;
-    }
-
-    // Large Mobile
-    @include respond(mobL) {
-      display: none;
-    }
-
-    // medium Mobile
-    @include respond(mobM) {
-      display: none;
-    }
-    // Small Mobile
-    @include respond(mobS) {
-      display: none;
-    }
-  }
   .btn-yellow {
     @include btn-yellow;
   }
@@ -70,67 +42,6 @@ footer {
     }
     img {
       @include size(100%, auto);
-    }
-  }
-  .quick-links {
-    // Tablate
-    @include respond(tab) {
-      margin: 20px 0;
-    }
-    // Small Mobile
-    @include respond(mobS) {
-      margin: 20px 0;
-    }
-    h5 {
-      @extend %m20-l;
-      color: $blue;
-    }
-    ul {
-      @extend %m20-t;
-      li {
-        list-style-type: disc;
-        font-size: 16px;
-      }
-    }
-  }
-  .services {
-    // Tablate
-    @include respond(tab) {
-      margin: 20px 0;
-    }
-    // Small Mobile
-    @include respond(mobS) {
-      margin: 20px 0;
-    }
-    h5 {
-      color: $blue;
-    }
-    p {
-      @extend %m20-t;
-      color: $dark;
-    }
-  }
-  .social {
-    // Tablate
-    @include respond(tab) {
-      margin: 20px 0;
-    }
-    // Small Mobile
-    @include respond(mobS) {
-      margin: 20px 0;
-    }
-    h5 {
-      color: $blue;
-    }
-    small {
-      @extend %m50-t;
-      // font-size: 14px;
-    }
-    .icons {
-      @include extra-margin(20px 0 10px 0);
-      img {
-        @extend %icon-size;
-      }
     }
   }
 }

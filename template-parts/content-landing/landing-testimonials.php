@@ -52,7 +52,9 @@ $tq = new WP_Query($args);
                         <?php the_excerpt(); ?>
                     </p>
                 </div>
-            <?php endwhile; ?>
+            <?php endwhile;
+            // reset post data
+            wp_reset_postdata(); ?>
         </div>
         <!-- </div> -->
     </div>

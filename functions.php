@@ -84,6 +84,11 @@ require get_template_directory() . '/inc/custom-sidebar.php';
 require get_template_directory() . './inc/custom-heading-widget.php';
 
 /**
+ * Custom Button Widget
+ */
+require get_template_directory() . './inc/custom-button-widget.php';
+
+/**
  * Load Jetpack compatibility file.
  */
 if (defined('JETPACK__VERSION')) {

@@ -109,6 +109,21 @@ function medicinic_sidebar()
         'after_desc'  => '</p>',
     );
     register_sidebar($hero_args);
+
+    /**
+     * Register testimonial hero sidebar of landing page
+     * before_sub_title, after_sub_title & before desc, after_desc is created for custom heading widgte
+     */
+    $hero_args = array(
+        'name' => __('Footer Sidebar', 'medicinic'),
+        'id' => 'footer-sidebar',
+        'description' => __('This is the footer sidebar!', 'medicinic'),
+        'before_widget' => '<div class="col-lg-3 col-md-6 contact">',
+        'after_widget' => '</div>',
+        'before_title'  => '<h5>',
+        'after_title'   => '</h5>',
+    );
+    register_sidebar($hero_args);
 }
 
 // initialize widgets

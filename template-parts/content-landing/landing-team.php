@@ -60,7 +60,9 @@ $dq = new WP_Query($args);
 
                     </div>
                 </div>
-            <?php endwhile; ?>
+            <?php endwhile;
+            // end quring
+            wp_reset_postdata(); ?>
         </div>
 
     </div>
