@@ -26,7 +26,8 @@ $tq = new WP_Query($args);
          * Getting the tesimonials hero area sidebar
          * testimonial-hero
          */
-        get_sidebar('testimonial-hero');
+        theme_sidebar('inc/sidebar', 'testimonial-hero');
+        // get_sidebar('testimonial-hero');
         ?>
 
         <div class="row">

@@ -1,0 +1,78 @@
+// #Appoinment Page Styles
+@import "../base/base";
+.appoinment-thumbnail {
+  width: 100% !important;
+  height: 600px !important;
+}
+.appointment-title {
+  padding: 100px 0;
+  text-align: center;
+}
+.appointment-subtitle {
+  padding: 0 50px;
+  font-size: 20px;
+  font-weight: normal;
+  font-family: $roboto;
+  color: $grey;
+}
+.appointment-content {
+  margin-top: 100px;
+}
+.calender {
+}
+.ui-datepicker {
+  background-color: $yellow !important;
+  border: none !important;
+  // box-shadow: 0 0 8px $black !important;
+  box-shadow: none !important;
+  color: $black;
+
+  .ui-datepicker-calendar {
+    .ui-datepicker-today.no-slots {
+      background-color: $yellow-light;
+      &:active {
+        background-color: $yellow-super-light;
+      }
+      &:hover {
+        background-color: $yellow-super-light;
+      }
+    }
+    tbody {
+      td {
+        a {
+          color: $black !important;
+        }
+        &:hover {
+          color: $black !important;
+          background-color: $white;
+        }
+      }
+    }
+    .ui-datepicker-current-day {
+      background-color: $white;
+    }
+  }
+}
+.ea-bootstrap.btn-primary {
+  background-color: $yellow !important;
+}
+.ui-datepicker-prev::before {
+  color: $dark;
+}
+.ui-datepicker-next::before {
+  color: $dark;
+}
+.ui-datepicker-unselectable {
+  .ui-state-default {
+    color: $yellow-light;
+  }
+}
+.ea-bootstrap .time-row .time {
+  padding: 20px !important;
+}
+.ea-actions-group {
+  .ea-bootstrap.btn-primary {
+    background-color: $yellow !important;
+    border: none !important;
+  }
+}

@@ -13,9 +13,12 @@
         <div class="col-md-6 col-sm-12">
             <div class="hero-text-area">
                 <img src="<?php esc_html_e(get_template_directory_uri() . '/assets/heart-rate.svg'); ?>" class="heart-rate" />
-                <h6></h6>
                 <?php
-                get_sidebar();
+                // about-review sidebar
+                theme_sidebar('inc/sidebar');
+                ?>
+                <?php
+                // get_sidebar();
                 ?>
             </div>
         </div>

@@ -28,7 +28,7 @@ $dq = new WP_Query($args);
              * Getting the doctors hero area sidebar
              * doctor-hero
              */
-            get_sidebar('doctor-hero');
+            theme_sidebar('inc/sidebar', 'doctor-hero');
             ?>
         </div>
         <div class="row">

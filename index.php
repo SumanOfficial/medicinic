@@ -15,40 +15,6 @@
 
 get_header();
 ?>
-
-<!-- hero area start -->
-<section id="hero-area">
-	<?php get_template_part('/template-parts/content-landing/landing', 'hero'); ?>
-</section>
-<!-- hero area end -->
-<!-- service area start -->
-<section id="services">
-	<?php get_template_part('/template-parts/content-landing/landing', 'service') ?>
-</section>
-<!-- service area end -->
-<!-- about us area start -->
-<section id="about">
-	<?php get_template_part('/template-parts/content-landing/landing', 'about'); ?>
-</section>
-<!-- about us area end -->
-
-<!-- contact us start  -->
-<section id="contact">
-	<?php get_template_part('/template-parts/content-landing/landing', 'contact'); ?>
-</section>
-<!-- contact area end -->
-
-<!-- doctors area start -->
-<section id="doctors">
-	<?php get_template_part('/template-parts/content-landing/landing', 'team'); ?>
-</section>
-<!-- doctors area end -->
-
-<!-- testimonials area start -->
-<section id="testimonials">
-	<?php get_template_part('/template-parts/content-landing/landing', 'testimonials'); ?>
-</section>
-<!-- contact area end -->
-
+	<?php get_template_part('./template-parts/content'); ?>
 <?php
 get_footer();

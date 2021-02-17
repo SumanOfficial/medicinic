@@ -81,12 +81,12 @@ require get_template_directory() . '/inc/custom-sidebar.php';
 /**
  * Custom Text Widget
  */
-require get_template_directory() . './inc/custom-heading-widget.php';
+require get_template_directory() . './inc/custom-widgets/custom-heading-widget.php';
 
 /**
  * Custom Button Widget
  */
-require get_template_directory() . './inc/custom-button-widget.php';
+require get_template_directory() . './inc/custom-widgets/custom-button-widget.php';
 
 /**
  * Load Jetpack compatibility file.

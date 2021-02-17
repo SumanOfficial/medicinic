@@ -26,7 +26,9 @@ $cq = new WP_Query($args);
         <div class="row">
             <div class="col-md-6">
                 <div class="contact-text">
-                    <?php get_sidebar('contact-hero'); ?>
+                    <?php
+                    // contact hero sidebar
+                    theme_sidebar('inc/sidebar', 'contact-hero'); ?>
                 </div>
             </div>
             <div class="col-md-6">

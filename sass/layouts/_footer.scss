@@ -5,6 +5,9 @@
 // ---------------------------------
 
 footer {
+  margin-top: 150px;
+  color: $white !important;
+  background-color: $blue;
   @include size(100%, auto);
   @include padding(80px 0);
   position: relative;
@@ -36,12 +39,31 @@ footer {
     @include respond(mobS) {
       margin: 20px 0;
     }
+    p {
+      color: $white;
+    }
+    a {
+      color: $white;
+      transition: 0.2s all;
+      &:hover {
+        color: $yellow;
+      }
+    }
     h5 {
-      color: $blue;
+      color: $yellow;
       @extend %m20-b;
     }
     img {
       @include size(100%, auto);
     }
+  }
+}
+
+.content-footer {
+  padding: 0;
+  margin: 40px 0;
+  background-color: #fff;
+  h5 {
+    color: $dark;
   }
 }

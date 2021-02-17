@@ -22,7 +22,6 @@
 				/**
 				 * Custom logo
 				 */
-
 				if (has_custom_logo()) :
 				?>
 					<h3 class="footer-logo">
@@ -44,7 +43,7 @@
 			/**
 			 * Footer sidebar
 			 */
-			get_sidebar('footer');
+			theme_sidebar('inc/sidebar', 'footer');
 			?>
 		</div>
 	</div>

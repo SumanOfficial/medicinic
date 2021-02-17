@@ -40,9 +40,10 @@ $sq = new WP_Query($args);
                              * 
                              * get_field('icon')['url'];
                              */
-                            $img_id = get_post_meta(get_the_ID(), 'icon', true);
-                            if ($img_id) :
+                            $img_id = get_post_meta($post->ID, 'icon', true);
+                            if (!empty($img_id)) :
                                 $img = wp_get_attachment_image_src($img_id)[0];
+
                             ?>
                                 <img src="<?php echo $img; ?>" alt="" class="icon" />
                             <?php

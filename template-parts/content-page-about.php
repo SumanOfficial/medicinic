@@ -29,6 +29,11 @@
         <div class="col-md-6 about-text">
             <?php the_title('<h6 class="about-text-head">', '</h6>'); ?>
             <?php the_content(); ?>
+
+
+            <?php
+            // call instead of get_sidebar()
+            theme_sidebar('inc', 'footer'); ?>
             <!-- #TODO this should be a widget  -->
             <div class="about-review row">
                 <div class="about-review-doctor col-4">

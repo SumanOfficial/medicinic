@@ -1,0 +1,50 @@
+@import "../base/base";
+
+#comments {
+  margin-top: 50px;
+}
+.comment-meta {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: $yellow-super-light;
+}
+.comment-body {
+  padding: 10px;
+  margin: 10px 0;
+  background-color: rgb(226, 226, 226);
+}
+.reply {
+  margin: 10px 0;
+  a {
+    background-color: $blue;
+    padding: 10px;
+    color: $white;
+  }
+}
+#reply-title {
+  margin-top: 50px;
+}
+.comment-form-comment {
+  label {
+    display: none;
+  }
+  textarea {
+    border: 1px solid $blue;
+  }
+}
+.form-submit {
+  input {
+    background-color: $blue;
+    border: none;
+    color: $white;
+    padding: 10px;
+    transition: 0.2s all;
+    &:hover {
+      background-color: $yellow;
+      color: $dark;
+    }
+  }
+}
+.comment-list {
+  list-style-type: none;
+}

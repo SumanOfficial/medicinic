@@ -13,6 +13,10 @@
 // Slider element
 // ---------------------------------
 
+/* 
+  @param <color> $bgc background color of the slider 
+  @param <color> $title-color title text color of the slider 
+*/
 @mixin slider-card($bgc, $title-color) {
   cursor: pointer;
   margin-left: 10px;

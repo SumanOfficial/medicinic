@@ -35,7 +35,10 @@ if ($about_query->have_posts()) :
                     <?php the_title('<h6 class="about-text-head">', '</h6>'); ?>
                     <?php the_content(); ?>
                     <div class="about-review row">
-                        <?php get_sidebar('about-review'); ?>
+                        <?php
+                        // about-review sidebar
+                        theme_sidebar('inc/sidebar', 'about-review');
+                        ?>
                     </div>
                 </div>
             </div>
