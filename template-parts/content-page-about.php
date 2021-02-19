@@ -29,52 +29,11 @@
         <div class="col-md-6 about-text">
             <?php the_title('<h6 class="about-text-head">', '</h6>'); ?>
             <?php the_content(); ?>
-
-
-            <?php
-            // call instead of get_sidebar()
-            theme_sidebar('inc', 'footer'); ?>
-            <!-- #TODO this should be a widget  -->
             <div class="about-review row">
-                <div class="about-review-doctor col-4">
-                    <div class="row">
-                        <div class="col-3">
-                            <div class="point-outline">
-                                <div class="point"></div>
-                            </div>
-                        </div>
-                        <div class="col-9">
-                            <h3>251 +</h3>
-                            <h6>Expart Doctors</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-review-hospital col-4">
-                    <div class="row">
-                        <div class="col-3">
-                            <div class="point-outline">
-                                <div class="point"></div>
-                            </div>
-                        </div>
-                        <div class="col-9">
-                            <h3>3556 +</h3>
-                            <h6>Happy patients</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-review-patients col-4">
-                    <div class="row">
-                        <div class="col-3">
-                            <div class="point-outline">
-                                <div class="point"></div>
-                            </div>
-                        </div>
-                        <div class="col-9">
-                            <h3>350 +</h3>
-                            <h6>Hospital Room</h6>
-                        </div>
-                    </div>
-                </div>
+                <?php
+                // about-review sidebar
+                theme_sidebar('inc/sidebar', 'about-review');
+                ?>
             </div>
         </div>
     </div>

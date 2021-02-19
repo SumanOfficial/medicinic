@@ -46,7 +46,7 @@ get_header();
 				?>
 			</div>
 			<div class="col-lg-3">
-				<?php theme_sidebar('./inc/sidebar', 'blog') ?>
+				<?php theme_sidebar('./inc/sidebar', 'blog'); ?>
 			</div>
 		</div>
 	</div>
