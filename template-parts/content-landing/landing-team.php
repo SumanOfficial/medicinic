@@ -50,12 +50,12 @@ $dq = new WP_Query($args);
                 <div class="card">
                     <div class="card-img">
                         <?php if (has_post_thumbnail()) : ?>
-                            <img class="card-img-top" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Card image cap" />
+                            <a href="<?php the_permalink($post->ID); ?>"><img class="card-img-top" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Card image cap" /></a>
                         <?php endif; ?>
                     </div>
 
                     <div class="card-body">
-                        <h5 class="card-title"><?php the_title(); ?></h5>
+                        <a href="<?php the_permalink($post->ID); ?>" class="card-title"><?php the_title(); ?></a>
                         <p class="card-text"><?php the_excerpt(); ?></p>
 
                     </div>
